@@ -18,7 +18,10 @@ public class Array {
 		for (int i = 2; i < length; i++) {
 			series[i] = series[i - 1] + series[i - 2];
 		}
+		if(i%10!=0){
 		System.out.print(Arrays.toString(series));
+		else 
+		System.out.print(Arrays.toString("last index is : "+ series));
 		scanner.close();
 	}
 }
